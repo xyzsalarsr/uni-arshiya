@@ -1,0 +1,122 @@
+<!doctype html>
+<html lang="fa" dir="rtl">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta
+      name="description"
+      content="همهٔ لباس‌های فروشگاه نمایشی پوشا را جست‌وجو و مرتب کن."
+    />
+    <title>همهٔ محصولات | پوشا</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <script defer src="js/data.js"></script>
+    <script defer src="js/common.js"></script>
+    <script defer src="js/products.js"></script>
+  </head>
+  <body>
+    <a class="skip-link" href="#main-content">رفتن به محتوای اصلی</a>
+    <header class="site-header">
+      <div class="container header-inner">
+        <a class="brand" href="index.html" aria-label="پوشا، صفحهٔ اصلی"
+          ><span class="brand-mark" aria-hidden="true">پ</span
+          ><span>پوشا</span></a
+        >
+        <button
+          class="menu-toggle"
+          type="button"
+          aria-expanded="false"
+          aria-controls="main-nav"
+          aria-label="باز کردن منو"
+        >
+          <span></span><span></span><span></span>
+        </button>
+        <nav class="main-nav" id="main-nav" aria-label="ناوبری اصلی">
+          <a href="index.html">خانه</a
+          ><a class="active" href="products.html" aria-current="page"
+            >همهٔ محصولات</a
+          >
+          <a href="products.html?category=tshirts">تی‌شرت</a
+          ><a href="products.html?category=shirts">پیراهن</a>
+        </nav>
+        <div class="cart-indicator" aria-label="تعداد کالاهای سبد خرید">
+          <span aria-hidden="true">سبد خرید</span
+          ><span class="cart-count" data-cart-count>۰</span>
+        </div>
+      </div>
+    </header>
+
+    <main class="container page-main" id="main-content">
+      <div class="page-heading">
+        <p class="eyebrow">مجموعهٔ پوشا</p>
+        <h1>همهٔ محصولات</h1>
+        <p>
+          مدل‌ها را جست‌وجو کن، دسته‌بندی را انتخاب کن و قیمت‌ها را مرتب کن.
+        </p>
+      </div>
+      <section class="filter-panel" aria-label="جست‌وجو و فیلتر محصولات">
+        <div class="field field-search">
+          <label for="product-search">جست‌وجوی نام محصول</label
+          ><input
+            id="product-search"
+            type="search"
+            placeholder="مثلاً تی‌شرت نخی"
+            autocomplete="off"
+          />
+        </div>
+        <div class="field">
+          <label for="category-filter">دسته‌بندی</label
+          ><select id="category-filter">
+            <option value="">همهٔ دسته‌ها</option>
+          </select>
+        </div>
+        <div class="field">
+          <label for="sort-filter">مرتب‌سازی قیمت</label
+          ><select id="sort-filter">
+            <option value="default">ترتیب پیش‌فرض</option>
+            <option value="low">ارزان‌ترین</option>
+            <option value="high">گران‌ترین</option>
+          </select>
+        </div>
+      </section>
+      <p class="results-count" id="results-count" aria-live="polite"></p>
+      <div class="product-grid" id="all-products" aria-live="polite"></div>
+      <div class="empty-state" id="empty-state" hidden>
+        <h2>چیزی پیدا نشد</h2>
+        <p>عبارت جست‌وجو یا دسته‌بندی انتخاب‌شده را تغییر بده.</p>
+        <a class="button button-primary" href="products.html"
+          >نمایش همهٔ محصولات</a
+        >
+      </div>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container footer-main">
+        <div class="footer-brand">
+          <a class="brand brand-footer" href="index.html"
+            ><span class="brand-mark" aria-hidden="true">پ</span
+            ><span>پوشا</span></a
+          >
+          <p>یک فروشگاه نمایشی پوشاک برای تمرین طراحی وب.</p>
+        </div>
+        <div>
+          <h2 class="footer-title">دسترسی سریع</h2>
+          <ul class="footer-links">
+            <li><a href="index.html">خانه</a></li>
+            <li><a href="products.html">همهٔ محصولات</a></li>
+            <li><a href="products.html?category=hoodies">هودی‌ها</a></li>
+          </ul>
+        </div>
+        <div>
+          <h2 class="footer-title">تماس نمایشی</h2>
+          <p>ایمیل: hello@example.invalid</p>
+          <p>تلفن: ۰۲۱-۰۰۰۰۰۰۰۰</p>
+          <p class="fiction-note">اطلاعات تماس بالا واقعی نیست.</p>
+        </div>
+      </div>
+      <div class="container footer-bottom">
+        <span>© پوشا؛ پروژهٔ آموزشی</span
+        ><span>طراحی و توسعه: ارشیا محمدقاسمی</span>
+      </div>
+    </footer>
+  </body>
+</html>
